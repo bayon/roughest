@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+	<title>Kiosk Index</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/rwd-grid.css"> 
+	<link rel="stylesheet" href="css/brochure.css">
+	<link rel="stylesheet" href="css/animate.css">
+	 <style>
+	 .gomedia-report{
+	 	outline:none;
+	 }
+	 </style>
+	<!--KIOSK FUNCTIONS:  This code will only work if 'Access JavaScript API' is set to 'By Import' AND  'kiosk_functions.js' is in your folder. --> 
+	<script src="js/kiosk_functions.js" type="text/javascript"></script>
+	<script src='js/jquery-1.11.2.min.js'></script>
+	 
+</head>
+
+<body id="page_one" class=" white " onload="report_engaged_DOM(this);"  >
+<input id='unique_ipad_id' type="hidden"  name="unique_ipad_id" value=''>
+ 	<div class="main">
+		 <div class='page-standard-menu' style='text-align:center;' >
+				 <div   class="row page-standard-menu-row" >
+					<div   class='col-4 col-m-4 bg-img-3-blank animated fadeIn delay2'> <!--  personal-banking -->
+					</div>
+					<a href='index.html'  >
+						<div   class='col-4 col-m-4 bg-img-3-active  animated fadeIn delay3'>
+						 	<h2 class='tab_text_oneline' >home</h2>
+						</div>
+					</a>
+					<a href='page_one.html'  >
+						<div   class='col-4 col-m-4 bg-img-3-active  animated fadeIn delay3'>
+						 	<h2 class='tab_text_oneline' >page one</h2>
+						</div>
+					</a>
+					<a href='page_two.html'  >
+						<div   class='col-4 col-m-4 bg-img-3  animated fadeIn delay4'>
+						 	<h2 class='tab_text_oneline' >page two </h2>				
+						</div>
+					</a>	
+				</div>
+			</div>
+		
+	</div>
+	 
+	<script src="js/backend.js"></script>
+	<script>
+	function report_engagment(){
+		console.log('REPORT ENGAGEMENT');
+
+	}
+	 
+		$( document ).ready(function() {
+			$(".gomedia-report").focusin(function() {
+				//registers clicks as a report incident
+				//requires class='gomedia-report' id and tabindex='-1'
+				  console.log('focus');
+				  console.log(this.id);
+				  report_engaged_DOM(this.id);
+				});
+			 });
+        	
+   
+	 
+	</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+	<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

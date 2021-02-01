@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<title>Brochure</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--KIOSK FUNCTIONS:  This code will only work if 'Access JavaScript API' is set to 'By Import' AND  'kiosk_functions.js' is in your folder. -->
+	<script src="js/kiosk_functions.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+	<div>
+		<h4>Brochure</h4>
+	</div>
+
+	<div>
+		<p>
+			 Your Company's Call to action !
+		</p>
+	</div>
+	<div>
+		<label>Name:</label>
+	</div>
+	<div>
+		<input id='name' type="text" placeholder="your name" value=''>
+		<input id='unique_ipad_id' type="hidden"  name="unique_ipad_id" value=''>
+		<input id='page_name' type="hidden"  name="page_name" value='brochure'>
+
+	</div>
+	<div>
+		<label>Email:</label>
+	</div>
+	<div>
+		<input id='email' type="text" placeholder="your email" value=''>
+	</div>
+
+	<div>
+		<input id="info_checkbox" type="checkbox">
+	</div>
+	<div>
+		I'd like to join  YOUR COMPANY's  email list and receive additional information, announcemnets, and special offers.
+	</div>
+	<div>
+		We will never use your information with andy third party.
+	</div>
+
+	<div>
+		<a href="#" onclick="init_brochure();" > SUBMIT </a>
+	</div>
+
+	<script src="js/brochure.js"></script>
+	<!-- Start of StatCounter Code for Default Guide -->
+	<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

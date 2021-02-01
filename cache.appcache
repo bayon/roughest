@@ -1,0 +1,29 @@
+CACHE MANIFEST
+# 2016-05-08  
+# 2017-05-14
+#version 1.1.3
+
+css/style.css
+js/rwd.js
+js/estimate.js
+js/latest_jquery.js
+js/materials.js
+js/tasks.js
+
+head.php
+constants.php
+estimate.php
+materials.php
+navigation.php
+tasks.php
+
+m/EstimateModel.js
+m/MaterialModel.js
+m/TaskModel.js
+
+
+NETWORK:
+
+
+
+ 

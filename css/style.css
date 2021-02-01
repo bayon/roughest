@@ -1,0 +1,221 @@
+body {
+	color: #333;
+	font: 14px Arial;
+	margin: 0;
+	
+}
+body a {
+	color: #3D5C9D;
+	text-decoration: none;
+	margin-right: 40px;
+}
+body{
+	background-color:#DDD;
+}
+#finalize{
+	padding:5px;
+	color:darkgreen;
+}
+a {
+	text-decoration:none;
+	cursor:pointer;
+
+}
+.how-it-works{
+	padding-top:20px;
+}
+.how-it-works{
+	font-weight:bold;
+}
+.content.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#app_name a{
+	 
+	color:#222;
+}
+h1{
+	font-size:16px;
+}
+h2{
+	font-size:14px;
+}
+h3{
+	font-size:12px;
+}
+.directions{
+	font-size:11px;
+	font-style:italic;
+	color: #555;
+}
+h2,h3,h4{
+	color: #555;
+}
+.content{
+	/*width:90%;
+	margin-left:5%;
+	margin-right:5%;*/
+	padding-left:1%;
+	padding-right:3%;
+}
+.form_row{
+	margin-top:15px;
+}
+.navigation_container {
+	text-align: center;
+	background-color: #FFB40F;
+	min-height:30px;
+	
+}
+.navigation_container a {
+	color: white;
+	 
+	font-size:20px;
+	
+	padding:2px;
+	margin:2px;
+}
+.scrollingContainer{
+	/*height:50px; 
+	overflow-y:scroll; scroll does NOT work on iPad Mini
+	border:solid 1px black;*/
+}
+
+.addButton{
+	width:100%;
+	height:30px;
+	font-size:20px;
+	color:green;
+	font-weight:bold;
+}
+.plusMinus{
+	font-size:20px;
+	font-family:"Arial Black";
+	font-weight:bold;
+	text-align:center;
+}
+.estimatorTable{
+	width:100%;
+	margin-top:20px;
+	border-collapse:collapse;
+	border:solid 1px #777;
+	font-size:13px;
+	text-align:center;
+	background-color:white;
+}
+.estimatorTable td{
+	min-width:25px;
+	padding:2px;
+	height:30px;
+}
+.estimatorTable th{
+	
+	background-color:#F1FFB8;
+}
+.estimatorTable a{
+	margin:0;
+}
+.estimatorTable a:link    {
+    color: #8E9BFF;
+}
+
+.estimatorTable a:visited {
+    color: orange;
+}
+
+.estimatorTable a:hover   {
+    color: orange;
+}
+
+.estimatorTable a:active  {
+    color: black;
+}
+#estimate_details{
+	margin-top:20px;
+	cccborder:solid 1px #555;
+	float:left;
+	display:none;
+	width:100%;
+}
+#selectedEstimateItem{
+	background-color:#DBFF8C;
+	border:solid 1px #555;
+	color:#444;
+}
+input{
+	border:solid 1px #eee !important;
+	border-radius:6px;
+	width:94%;padding:2%;
+}
+.data_minutes{
+	/*input for $*/
+	width:40px;
+	max-width:40px;
+}
+.data_tasks{
+	/*input for $*/
+	width:40px;
+	max-width:40px;
+}
+.data_materials{
+	width:40px;
+	max-width:40px;
+}
+.summaryTable{
+	width:100%;
+	margin-top:20px;
+	border-collapse:collapse;
+	border:solid 1px #777;
+	font-size:13px;
+	text-align:center;
+	background-color:white;
+}
+.summaryTable td{
+	min-width:25px;
+	padding:2px;
+	height:30px;
+}
+table{
+	background-color:white;
+}
+.task_summary_detail_head{
+	font-weight:bold;background-color:#AEB3FF;
+	font-size:16px;
+}
+.task_summary_detail_key{
+	font-weight:bold;background-color:#BFFFCF;
+}
+.task_summary_detail_value{
+	font-style:italic;background-color:#FFF;
+}
+ 
+th,td{
+	padding:2px;
+}
+/*------------------TABLET----------------*/
+ @media screen and (max-width:1024px) {
+
+}
+ 
+
+ 
+
+/*------------------iPhone----------------*/
+ @media screen and (max-width:736px) {
+ 	.estimatorTable td{
+	min-width:0px;
+	padding:0px;
+	height:30px;
+}
+/*------------------TABLET----------------*/
+ @media screen and (max-width:414px) {
+
+}
+/*------------------TABLET----------------*/
+ @media screen and (max-width:320px) {
+ 	body{background-color:#dde !important;}
+}
+
+}

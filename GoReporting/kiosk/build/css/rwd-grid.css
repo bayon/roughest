@@ -1,0 +1,238 @@
+ /* CSS Document */
+
+/* Genral Grid Layout  | iPad Kiosk */
+/*
+ * rwd-grid.css is a compilation of code created at w3schools. w3css
+ * Thanks to: http://www.w3schools.com/css/css_rwd_grid.asp
+ */
+/* Website Produced by Codigo | gocodigo.com */
+
+/* --------------------------------------------------
+CSS Table of Contents // Primary CSS Doc
+-----------------------------------------------------
+1. General Grid CSS
+
+3. Basic Colors
+4. RWD
+
+********************************************* */
+
+
+/**********************/
+/*  1. General */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	text-align:center;
+	font-family: "Lucida Sans", sans-serif;
+}
+ 
+
+* {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px
+}
+/* set all items box sizing property*/
+* {
+	box-sizing: border-box;
+}
+/*when placed on the body tag, keeps page centered and at maximum width limitation.*/
+.grid-contain{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.main {
+	width: 100%;
+	float: left;
+	background-color:none;
+	/*height: 100%;
+	width:90%;
+	margin-left:5%;*/
+}
+ 
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-11 {
+	width: 91.66%;
+}
+.col-12 {
+	width: 100%;
+}
+[class*="col-"] {
+	float: left;
+	/*padding: 15px;border: 1px solid #ddd;*/
+	
+}
+/* .h- class is for filling space horizontally inside a .col class by percentage */
+.h-100prct{height:100%;}
+.h-75prct{height:75%;}
+.h-66prct{height:66%;}
+.h-50prct{height:50%;}
+.h-33prct{height:33%;}
+.h-25prct{height:25%;}
+/* pad */
+.pad-5{ padding:5px; }
+.pad-10{ padding:10px;}
+.pad-15{ padding:15px;}
+.pad-B-150{ padding-bottom:150px;}
+.txt-align-c{text-align:center;}
+.txt-align-r{text-align:right;}
+.txt-align-l{text-align:left;}
+/* .row:after
+ * The columns inside a row are all floating to the left,
+ * and are therefore taken out of the flow of the page,
+ * and other elements will be placed as if the columns does not exist.
+ * To prevent this, we will add a style that clears the flow:
+ * */
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+
+/***************************/
+/* 2. Basic Colors 	 */
+ 
+.white { background-color: #fff; }
+.black { background-color: #000; }
+.gray { background-color: #ccc; }
+ 
+
+
+
+/*********************************/
+/* 4. RWD  */
+@media (max-width:600px){.w3-modal-content{margin:50px 10px 10px 10px;width:auto !important}}
+@media (max-width:768px){.w3-modal-content{width:500px}}
+@media (min-width:993px){.w3-modal-content{width:900px}}
+ 
+@media only screen and (max-width: 500px) {
+	body {
+		background-color: lightblue;
+	}
+}
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	[class*="col-"] {
+		width: 100%;
+	}
+	 
+	[class*="horiz-"] {
+		width: 100%;
+	}
+}
+/* Break Points */
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-m-1 {
+		width: 8.33%;
+	}
+	.col-m-2 {
+		width: 16.66%;
+	}
+	.col-m-3 {
+		width: 25%;
+	}
+	.col-m-4 {
+		width: 33.33%;
+	}
+	.col-m-5 {
+		width: 41.66%;
+	}
+	.col-m-6 {
+		width: 50%;
+	}
+	.col-m-7 {
+		width: 58.33%;
+	}
+	.col-m-8 {
+		width: 66.66%;
+	}
+	.col-m-9 {
+		width: 75%;
+	}
+	.col-m-10 {
+		width: 83.33%;
+	}
+	.col-m-11 {
+		width: 91.66%;
+	}
+	.col-m-12 {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.col-1 {
+		width: 8.33%;
+	}
+	.col-2 {
+		width: 16.66%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33%;
+	}
+	.col-5 {
+		width: 41.66%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33%;
+	}
+	.col-8 {
+		width: 66.66%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33%;
+	}
+	.col-11 {
+		width: 91.66%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+}
+/* Orientation */
+@media only screen and (orientation: landscape) {
+	body {
+		background-color: lightblue;
+	}
+}
